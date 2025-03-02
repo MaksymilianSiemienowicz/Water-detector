@@ -1,0 +1,9 @@
+services:
+  app:
+    image: czujnik:1
+    environment:
+      - API_URL=URL
+      - EMAIL_PASSWORD=pass
+      - EMAIL=mail
+    volumes:
+      - /home/admin/czujnik/logs:/logs
